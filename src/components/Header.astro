@@ -1,0 +1,26 @@
+<header
+  class="flex justify-between py-5 px-4 shadow-md bg-white dark:bg-Dark-blue">
+  <h1 class="font-bold text-sm">Where in the world?</h1>
+  <button id="mode" class="text-xs"
+    ><i class="fa-regular fa-moon mr-2"></i>Dark Mode</button
+  >
+</header>
+<script>
+  const mode = document.getElementById("mode");
+  function comprobarTema() {
+    if (localStorage.getItem("theme") === "true") {
+      document.documentElement.classList.add("dark");
+    }
+  }
+
+  mode.addEventListener("click", () => {
+    if (localStorage.getItem("theme") === "true") {
+      localStorage.setItem("theme", "false");
+      document.documentElement.classList.toggle("dark");
+    } else {
+      localStorage.setItem("theme", "true");
+      document.documentElement.classList.toggle("dark");
+    }
+  });
+  comprobarTema();
+</script>

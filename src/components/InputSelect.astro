@@ -1,0 +1,22 @@
+---
+const regions = [
+  "Antarctic",
+  "Americas",
+  "Europe",
+  "Africa",
+  "Asia",
+  "Oceania",
+];
+---
+
+<select
+  name="continent"
+  id="select"
+  class="bg-white dark:bg-Dark-blue w-1/2 rounded-sm shadow-sm p-3 text-sm outline-none lg:w-2/6">
+  <option selected disabled hidden value="">Filter by Region</option>
+  {
+    regions.map((region) => (
+      <option value={region.toLocaleLowerCase()}>{region}</option>
+    ))
+  }
+</select>
