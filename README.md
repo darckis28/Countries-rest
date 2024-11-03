@@ -4,7 +4,7 @@ Este proyecto es una aplicación web desarrollada con **JavaScript**, **Astro** 
 
 ## Demo
 
-Puedes ver el proyecto en vivo [aquí](https://link-a-la-demo.com](https://countries-darckis28.netlify.app/).
+Puedes ver el proyecto en vivo [aquí](https://countries-darckis28.netlify.app/).
 
 ## Tecnologías Utilizadas
 
