@@ -1,54 +1,39 @@
-# Astro Starter Kit: Basics
+# Countries Rest
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este proyecto es una aplicación web desarrollada con **JavaScript**, **Astro** y **Tailwind CSS**. Utiliza la API REST de [Rest Countries](https://restcountries.com/) para mostrar información sobre países de todo el mundo. Permite buscar países, filtrar por región y ver detalles específicos de cada país.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Demo
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Puedes ver el proyecto en vivo [aquí]([https://link-a-la-demo.com](https://countries-darckis28.netlify.app/)).
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tecnologías Utilizadas
 
-## 🚀 Project Structure
+- **Astro**
+- **JavaScript**
+- **Tailwind CSS**
+- **API REST de Rest Countries**
 
-Inside of your Astro project, you'll see the following folders and files:
+## Funcionalidades
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Buscar Países**: Encuentra países específicos usando el nombre.
+- **Filtrar por Región**: Filtra los países según la región (África, América, Asia, Europa, Oceanía).
+- **Ver Detalles de un País**: Muestra detalles de un país seleccionado, incluyendo su bandera, capital, población, y más.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Instalación
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/darckis28/Countries-rest.git
+2. Navega al directorio del proyecto
+   cd Countries-rest
+3.Instala las dependencias
+  npm install
+4.Inicia el servidor de desarrollo
+  npm run dev
+5.Abre el proyecto en tu navegador en http://localhost:3000.
+Uso
+Usa la barra de búsqueda para encontrar países por nombre.
+Usa el filtro de región para visualizar solo los países de una región específica.
+Haz clic en un país para ver detalles adicionales.
+Contribución
+Las contribuciones son bienvenidas. Si deseas mejorar o añadir nuevas características, abre un issue o envía un pull request.
