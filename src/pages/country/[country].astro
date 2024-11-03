@@ -5,9 +5,9 @@ import Layout from "../../layouts/Layout.astro";
 import getCodigCountry from "../../Utils/getCodigCountry.js";
 export async function getStaticPaths() {
   const countries = await getCountries();
-  return countries.map((country) => ({
+  return countries.map((country: any) => ({
     params: {
-      country: country.name.common,
+      country: country?.name?.common,
     },
     props: country,
   }));
@@ -61,9 +61,10 @@ const {
           </div>
           <div>
             <Description title="Top Level Domain:">{tld} </Description>
-            <Description title="Currencies:"
-              >{currencies[Object.keys(currencies)[0]].name}
+            <Description title="Currencies:">
+              {currencies && currencies[Object.keys(currencies)[0]]?.name}
             </Description>
+
             <Description title="Languages:"
               >{Object.values(languages).join(", ")}</Description
             >

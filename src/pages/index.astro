@@ -4,7 +4,6 @@ import InputSelect from "../components/InputSelect.astro";
 import InputSearch from "../components/InputSearch.astro";
 import Card from "../components/Card.astro";
 import getCountries from "../api/countries";
-import type { ObjectPair } from "astro/zod";
 const countriesAll = await getCountries();
 ---
 
@@ -27,7 +26,7 @@ const countriesAll = await getCountries();
         {
           countriesAll
             ?.slice(0, 40)
-            .map((country) => (
+            .map((country: any) => (
               <Card
                 name={country.name.common}
                 population={country.population}
@@ -54,7 +53,7 @@ const countriesAll = await getCountries();
     if (e.target.value === "") return;
     const countries = await getCountry(e.target.value);
     let newContent = "";
-    countries.forEach((country) => {
+    countries.forEach((country: any) => {
       newContent += `<li class="link-card shadow-md rounded-md overflow-hidden bg-white dark:bg-Dark-blue"">
   <a href="/country/${country.name.common}" class="bg-white">
     <img src='${country.flags.svg}' alt=" " class="h-40 w-full object-cover" />
@@ -72,7 +71,7 @@ const countriesAll = await getCountries();
   inputSelect.addEventListener("change", async (e: any) => {
     const countries = await getRegion(e.target.value);
     let newContent = "";
-    countries.forEach((country) => {
+    countries.forEach((country: any) => {
       newContent += `<li class="link-card shadow-md rounded-md overflow-hidden bg-white dark:bg-Dark-blue"">
   <a href="/country/${country.name.common}" class="bg-white">
     <img src='${country.flags.svg}' alt=" " class="h-40 w-full object-cover" />
